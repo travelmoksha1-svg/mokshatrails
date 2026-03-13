@@ -29,14 +29,14 @@
 
     <!-- ========================================
        HEADER / NAVIGATION
-  ======================================== -->
+    ======================================== -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="#" class="logo">
                     <img src="images/icon-bg.png" alt="MokshaTrails Logo"
                         style="height: 44px; width: 44px; object-fit: contain;">
-                    <span style="display: inline-block; margin-left: var(--space-xs);">MokshaTrails</span>
+                    <span>MokshaTrails</span>
                 </a>
 
                 <ul class="nav-links">
@@ -45,24 +45,19 @@
                     <li><a href="#itinerary">Itinerary</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#upcoming">Upcoming Treks</a></li>
-                    <li class="mobile-only-referral" style="display: none;"><a href="#referral"
-                            style="color: #34d399; font-weight: 600;">Refer & Earn</a></li>
                 </ul>
 
-                <div class="nav-actions" style="display: flex; align-items: center; gap: var(--space-sm);">
-                    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Dark Mode">
+                <div class="nav-actions">
+                    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
                         <span class="icon">🌙</span>
                     </button>
-                    <a href="#referral"
-                        style="padding: 6px 14px; background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.3); border-radius: 50px; font-size: 0.8rem; font-weight: 600; text-decoration: none; white-space: nowrap;">Refer
-                        & Earn <span
-                            style="display: inline-block; width: 6px; height: 6px; background: #34d399; border-radius: 50%; margin-left: 3px; animation: pulse 1.5s infinite;"></span></a>
-
-                    <a href="https://wa.me/919653217634?text=Hi!%20I'm%20interested%20in%20booking%20a%20trek%20with%20Moksha%20Trails"
+                    <a href="#referral" class="refer-badge">
+                        Refer & Earn <span class="pulse-dot-small"></span>
+                    </a>
+                    <a href="https://wa.me/919653217634?text=Hi!%20I'm%20interested%20in%20booking%20a%20trek%20with%20MokshaTrails"
                         class="btn btn-primary nav-cta">
                         📱 Book Now
                     </a>
-
                     <button class="mobile-menu-btn" aria-label="Toggle menu">
                         <span></span>
                         <span></span>
@@ -75,7 +70,7 @@
 
     <!-- ========================================
        HERO SECTION
-  ======================================== -->
+    ======================================== -->
     <section class="hero" id="hero">
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
@@ -87,12 +82,8 @@
                 <span class="badge">🧗‍♂️ Weekly Adventures</span>
             </div>
 
-            <p class="hero-subtitle fade-in"
-                style="margin-bottom: var(--space-xs); font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">
-                Welcome to MokshaTrails
-            </p>
-            <h1 class="hero-title fade-in" style="font-size: clamp(2rem, 5vw, 3.5rem);">Freedom Through Travel
-            </h1>
+            <p class="hero-subtitle fade-in">Welcome to MokshaTrails</p>
+            <h1 class="hero-title fade-in">Freedom Through Travel</h1>
 
             <p class="hero-subtitle fade-in">
                 Your Gateway to Authentic Sahyadri Adventures<br>
@@ -100,59 +91,40 @@
             </p>
 
             <div class="hero-cta fade-in">
-                <a href="#featured" class="btn btn-primary">
-                    ⛰️ Featured Trek
-                </a>
-                <a href="#upcoming" class="btn btn-secondary">
-                    🗺️ View Upcoming Treks
-                </a>
+                <a href="#featured" class="btn btn-primary">⛰️ Featured Trek</a>
+                <a href="#upcoming" class="btn btn-secondary">🗺️ View Upcoming Treks</a>
             </div>
         </div>
     </section>
 
     <!-- ========================================
-       UPCOMING TREKS SECTION
-  ======================================== -->
-    <!-- ========================================
        FEATURED TREK: SANDHAN VALLEY
-  ======================================== -->
-    <section class="section featured" id="featured"
-        style="background: linear-gradient(135deg, rgba(5, 20, 10, 0.6) 0%, rgba(0, 0, 0, 0.85) 100%), url('images/sandhan.jpg') center/cover no-repeat fixed; color: white; padding: 120px 0 100px;">
-        <div class="container"
-            style="display: flex; flex-direction: column; align-items: flex-start; max-width: 900px;">
-            <span class="badge fade-in"
-                style="display: inline-block; margin-bottom: var(--space-lg); font-size: 0.95rem; padding: 10px 22px; background: linear-gradient(135deg, #059669, #10b981); color: white; border-radius: 50px; font-weight: 600; letter-spacing: 0.5px;">⛰️
-                Trending Adventure</span>
+    ======================================== -->
+    <section class="section featured" id="featured">
+        <div class="container">
+            <span class="badge fade-in">⛰️ Trending Adventure</span>
 
-            <h2 class="fade-in"
-                style="color: white; font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: var(--space-md); line-height: 1.2; text-align: left;">
-                Sandhan Valley<br>Weekend Trek
-            </h2>
+            <h2 class="fade-in">Sandhan Valley<br>Weekend Trek</h2>
 
-            <div class="fade-in"
-                style="width: 60px; height: 4px; background: linear-gradient(90deg, #10b981, #34d399); border-radius: 2px; margin-bottom: var(--space-lg);">
-            </div>
+            <div class="divider fade-in"></div>
 
-            <p class="fade-in"
-                style="color: #d1d5db; font-size: 1.15rem; margin-bottom: var(--space-xl); line-height: 1.9; max-width: 680px; text-align: left;">
-                Experience the <strong style="color: #34d399;">Grand Canyon of Maharashtra</strong>. Navigate through
+            <p class="fade-in">
+                Experience the <strong>Grand Canyon of Maharashtra</strong>. Navigate through
                 the 200ft deep canyon, rappel down rocky patches, and camp under the stars at Kokankada. Our flagship
                 adventure, designed perfectly for thrill-seekers looking for an unforgettable weekend!
             </p>
 
             <div class="fade-in" style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
                 <a href="https://wa.me/919653217634?text=Hi!%20I%20want%20to%20book%20the%20Sandhan%20Valley%20Trek"
-                    class="btn btn-primary" style="font-size: 1.05rem; padding: 14px 32px;"> Book Now</a>
-                <a href="#itinerary" class="btn btn-secondary"
-                    style="font-size: 1.05rem; padding: 14px 32px; background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.4); backdrop-filter: blur(4px);">
-                    View Itinerary</a>
+                    class="btn btn-primary">📱 Book Now</a>
+                <a href="#itinerary" class="btn btn-secondary">View Itinerary</a>
             </div>
         </div>
     </section>
 
     <!-- ========================================
        QUICK TRIP HIGHLIGHTS
-  ======================================== -->
+    ======================================== -->
     <section class="section highlights" id="highlights">
         <div class="container">
             <h2 class="section-title fade-in">Trip Highlights</h2>
@@ -199,7 +171,7 @@
 
     <!-- ========================================
        DETAILED ITINERARY
-  ======================================== -->
+    ======================================== -->
     <section class="section itinerary" id="itinerary">
         <div class="container">
             <h2 class="section-title fade-in">Your Adventure Itinerary</h2>
@@ -245,11 +217,9 @@
         </div>
     </section>
 
-
-
     <!-- ========================================
        INCLUSIONS / EXCLUSIONS
-  ======================================== -->
+    ======================================== -->
     <section class="section inclusions" id="inclusions">
         <div class="container">
             <h2 class="section-title fade-in">What's Included</h2>
@@ -259,46 +229,16 @@
                 <div class="inclusion-box fade-in-left">
                     <h3>✅ Inclusions</h3>
                     <ul class="inclusion-list">
-                        <li class="inclusion-item">
-                            <span class="icon">🚐</span>
-                            <span>Mumbai–Samrad–Mumbai travel (Tempo Traveller)</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">☕</span>
-                            <span>Tea & Poha on arrival</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">⛺</span>
-                            <span>Tent stay accommodation</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">🔥</span>
-                            <span>Campfire & stargazing session</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">🍽️</span>
-                            <span>Dinner (Veg / Non-Veg options)</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">🍳</span>
-                            <span>Breakfast (Poha)</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">🍱</span>
-                            <span>Sunday lunch </span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">🧭</span>
-                            <span>Local guide & entry charges</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">👨‍💼</span>
-                            <span>Trip coordination & support</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">🩹</span>
-                            <span>Basic first aid kit</span>
-                        </li>
+                        <li class="inclusion-item"><span class="icon">🚐</span><span>Mumbai–Samrad–Mumbai travel (Tempo Traveller)</span></li>
+                        <li class="inclusion-item"><span class="icon">☕</span><span>Tea & Poha on arrival</span></li>
+                        <li class="inclusion-item"><span class="icon">⛺</span><span>Tent stay accommodation</span></li>
+                        <li class="inclusion-item"><span class="icon">🔥</span><span>Campfire & stargazing session</span></li>
+                        <li class="inclusion-item"><span class="icon">🍽️</span><span>Dinner (Veg / Non-Veg options)</span></li>
+                        <li class="inclusion-item"><span class="icon">🍳</span><span>Breakfast (Poha)</span></li>
+                        <li class="inclusion-item"><span class="icon">🍱</span><span>Sunday lunch</span></li>
+                        <li class="inclusion-item"><span class="icon">🧭</span><span>Local guide & entry charges</span></li>
+                        <li class="inclusion-item"><span class="icon">👨‍💼</span><span>Trip coordination & support</span></li>
+                        <li class="inclusion-item"><span class="icon">🩹</span><span>Basic first aid kit</span></li>
                     </ul>
                 </div>
 
@@ -306,22 +246,10 @@
                 <div class="inclusion-box fade-in-right">
                     <h3>❌ Exclusions</h3>
                     <ul class="inclusion-list">
-                        <li class="inclusion-item">
-                            <span class="icon">💰</span>
-                            <span>Personal expenses</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">🥤</span>
-                            <span>Bottled water / snacks not mentioned</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">📸</span>
-                            <span>Camera/photography equipment</span>
-                        </li>
-                        <li class="inclusion-item">
-                            <span class="icon">🎒</span>
-                            <span>Personal trekking gear</span>
-                        </li>
+                        <li class="inclusion-item"><span class="icon">💰</span><span>Personal expenses</span></li>
+                        <li class="inclusion-item"><span class="icon">🥤</span><span>Bottled water / snacks not mentioned</span></li>
+                        <li class="inclusion-item"><span class="icon">📸</span><span>Camera/photography equipment</span></li>
+                        <li class="inclusion-item"><span class="icon">🎒</span><span>Personal trekking gear</span></li>
                     </ul>
                 </div>
             </div>
@@ -334,7 +262,7 @@
 
     <!-- ========================================
        PRICING & BOOKING
-  ======================================== -->
+    ======================================== -->
     <section class="section pricing" id="pricing">
         <div class="container">
             <h2 class="section-title fade-in">Pricing & Booking</h2>
@@ -347,18 +275,9 @@
 
                 <div class="pricing-body">
                     <div class="pricing-features">
-                        <div class="pricing-feature">
-                            <span class="icon">💳</span>
-                            <span><strong>Advance:</strong> ₹1,000 to confirm your spot</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <span class="icon">📅</span>
-                            <span><strong>Balance:</strong> Pay before departure</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <span class="icon">📝</span>
-                            <span><strong>Note:</strong> Advance booking is mandatory</span>
-                        </div>
+                        <div class="pricing-feature"><span class="icon">💳</span><span><strong>Advance:</strong> ₹1,000 to confirm your spot</span></div>
+                        <div class="pricing-feature"><span class="icon">📅</span><span><strong>Balance:</strong> Pay before departure</span></div>
+                        <div class="pricing-feature"><span class="icon">📝</span><span><strong>Note:</strong> Advance booking is mandatory</span></div>
                     </div>
 
                     <div class="pricing-urgency">
@@ -378,7 +297,7 @@
                     </div>
 
                     <div class="pricing-cta">
-                        <a href="https://wa.me/919653217634?text=Hi!%20I%20want%20to%20book%20the%20Sandhan%20Valley%20Weekend%20Trek."
+                        <a href="https://wa.me/919653217634?text=Hi!%20I%20want%20to%20book%20the%20Sandhan%20Valley%20Weekend%20Trek%20for%20Next%20Saturday.%20Please%20share%20the%20details."
                             id="waBookingBtn" class="btn btn-primary" target="_blank">
                             📱 Book via WhatsApp
                         </a>
@@ -393,7 +312,7 @@
 
     <!-- ========================================
        IMPORTANT NOTES
-  ======================================== -->
+    ======================================== -->
     <section class="section notes" id="notes">
         <div class="container">
             <div class="notes-box fade-in">
@@ -403,135 +322,59 @@
                 </div>
 
                 <div class="notes-list">
-                    <div class="note-item">
-                        <span class="icon">🥾</span>
-                        <span>Moderate-level trek – basic fitness required</span>
-                    </div>
-                    <div class="note-item">
-                        <span class="icon">🌧️</span>
-                        <span>Entry subject to weather & forest permissions</span>
-                    </div>
-                    <div class="note-item">
-                        <span class="icon">👤</span>
-                        <span>Follow guide & trek leader instructions at all times</span>
-                    </div>
-                    <div class="note-item">
-                        <span class="icon">👟</span>
-                        <span>Proper trekking shoes compulsory</span>
-                    </div>
-                    <div class="note-item">
-                        <span class="icon">🚫</span>
-                        <span>No alcohol allowed during the trek</span>
-                    </div>
-                    <div class="note-item">
-                        <span class="icon">♻️</span>
-                        <span>No littering – carry back your waste</span>
-                    </div>
+                    <div class="note-item"><span class="icon">🥾</span><span>Moderate-level trek – basic fitness required</span></div>
+                    <div class="note-item"><span class="icon">🌧️</span><span>Entry subject to weather & forest permissions</span></div>
+                    <div class="note-item"><span class="icon">👤</span><span>Follow guide & trek leader instructions at all times</span></div>
+                    <div class="note-item"><span class="icon">👟</span><span>Proper trekking shoes compulsory</span></div>
+                    <div class="note-item"><span class="icon">🚫</span><span>No alcohol allowed during the trek</span></div>
+                    <div class="note-item"><span class="icon">♻️</span><span>No littering – carry back your waste</span></div>
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <!-- ========================================
        UPCOMING TREKS SECTION
-  ======================================== -->
-    <section class="section upcoming" id="upcoming" style="background: var(--color-off-white);">
+    ======================================== -->
+    <section class="section upcoming" id="upcoming">
         <div class="container">
             <h2 class="section-title fade-in">More Upcoming Adventures</h2>
-            <p class="text-center fade-in" style="margin-bottom: var(--space-2xl); color: var(--color-gray-500);">Join
-                MokshaTrails on our next exciting journeys across Maharashtra.</p>
+            <p class="text-center fade-in">Join MokshaTrails on our next exciting journeys across Maharashtra.</p>
 
-            <div class="testimonials-slider">
-                <!-- Upcoming Trek 1 -->
-                <div class="testimonial-card fade-in"
-                    style="padding: 0; overflow: hidden; max-width: 350px; border: 1px solid var(--color-gray-200); box-shadow: var(--shadow-md);">
+            <div class="upcoming-grid">
+                <!-- Trek 1 -->
+                <div class="trek-card fade-in">
                     <div style="height: 200px; background: url('images/Kolad_River_Rafting.jpg') center/cover; position: relative;">
-                        <span class="badge badge-urgent" style="position: absolute; top: 15px; left: 15px;">Coming
-                            Soon</span>
+                        <span class="trek-badge">Coming Soon</span>
                     </div>
-                    <div style="padding: var(--space-lg);">
-                        <h3 style="margin-bottom: var(--space-sm);">Kolad River Rafting</h3>
-                        <p style="color: var(--color-gray-500); font-size: 0.9rem; margin-bottom: var(--space-md);">
-                            Feel the rush as you navigate through the Kundalika River's exciting rapids. 
-Surrounded by lush green valleys, this is the perfect weekend escape for 
-thrill-seekers and nature lovers alike!</p>
-                        <a href="https://wa.me/919653217634?text=Hi!%20I'm%20interested%20in%20Pawna%20Lake%20Camping"
-                            class="btn btn-outline" style="width: 100%;">Get Notified</a>
+                    <div class="trek-content">
+                        <h3>Kolad River Rafting</h3>
+                        <p>Feel the rush as you navigate through the Kundalika River's exciting rapids. Surrounded by lush green valleys.</p>
+                        <a href="https://wa.me/919653217634?text=Hi!%20I'm%20interested%20in%20Kolad%20River%20Rafting" class="btn btn-outline">Get Notified</a>
                     </div>
                 </div>
 
-                <!-- Upcoming Trek 2 -->
-                <div class="testimonial-card fade-in"
-                    style="padding: 0; overflow: hidden; max-width: 350px; border: 1px solid var(--color-gray-200); box-shadow: var(--shadow-md);">
-                    <div
-                        style="height: 200px; background: url('images/Ratan_Gad.jpg') center/cover; position: relative;">
-                        <span class="badge badge-urgent" style="position: absolute; top: 15px; left: 15px;">Coming
-                            Soon</span>
+                <!-- Trek 2 -->
+                <div class="trek-card fade-in">
+                    <div style="height: 200px; background: url('images/Ratan_Gad.jpg') center/cover; position: relative;">
+                        <span class="trek-badge">Coming Soon</span>
                     </div>
-                    <div style="padding: var(--space-lg);">
-                        <h3 style="margin-bottom: var(--space-sm);">Ratangaad</h3>
-                        <p style="color: var(--color-gray-500); font-size: 0.9rem; margin-bottom: var(--space-md);">
-                            Perched proudly in the Sahyadris, Ratangaad offers breathtaking views of the 
-backwaters and surrounding peaks. A moderate trek that rewards you with 
-panoramic vistas and a slice of Maratha history.</p>
-                        <a href="https://wa.me/919653217634?text=Hi!%20I'm%20interested%20in%20Bhandardara"
-                            class="btn btn-outline" style="width: 100%;">Get Notified</a>
+                    <div class="trek-content">
+                        <h3>Ratangaad</h3>
+                        <p>Perched proudly in the Sahyadris, Ratangaad offers breathtaking views of the backwaters and surrounding peaks.</p>
+                        <a href="https://wa.me/919653217634?text=Hi!%20I'm%20interested%20in%20Ratangaad%20Trek" class="btn btn-outline">Get Notified</a>
                     </div>
                 </div>
 
-                <!-- Upcoming Trek 3 -->
-                <div class="testimonial-card fade-in"
-                    style="padding: 0; overflow: hidden; max-width: 350px; border: 1px solid var(--color-gray-200); box-shadow: var(--shadow-md);">
-                    <div
-                        style="height: 200px; background: url('images/Mahabaleshwar.jpg') center/cover; position: relative;">
-                        <span class="badge badge-urgent" style="position: absolute; top: 15px; left: 15px;">Coming
-                            Soon</span>
+                <!-- Trek 3 -->
+                <div class="trek-card fade-in">
+                    <div style="height: 200px; background: url('images/Mahabaleshwar.jpg') center/cover; position: relative;">
+                        <span class="trek-badge">Coming Soon</span>
                     </div>
-                    <div style="padding: var(--space-lg);">
-                        <h3 style="margin-bottom: var(--space-sm);">Mahabaleshwar</h3>
-                        <p style="color: var(--color-gray-500); font-size: 0.9rem; margin-bottom: var(--space-md);">
-                           Maharashtra's most loved hill station beckons with its sprawling strawberry farms, 
-ancient temples, and viewpoints that touch the sky. Perfect for families, couples, 
-and solo travelers seeking cool mountain air.</p>
-                        <a href="https://wa.me/919653217634?text=Hi!%20I'm%20interested%20in%20Igatpuri"
-                            class="btn btn-outline" style="width: 100%;">Get Notified</a>
-                    </div>
-                </div>
-
-                <!-- Upcoming Trek 4 -->
-                <div class="testimonial-card fade-in"
-                    style="padding: 0; overflow: hidden; max-width: 350px; border: 1px solid var(--color-gray-200); box-shadow: var(--shadow-md);">
-                    <div
-                        style="height: 200px; background: url('images/Tapola.png') center/cover; position: relative;">
-                        <span class="badge badge-urgent" style="position: absolute; top: 15px; left: 15px;">Coming
-                            Soon</span>
-                    </div>
-                    <div style="padding: var(--space-lg);">
-                        <h3 style="margin-bottom: var(--space-sm);">Tapola - Mini Kashmir</h3>
-                        <p style="color: var(--color-gray-500); font-size: 0.9rem; margin-bottom: var(--space-md);">
-                            Nestled along the backwaters of Shivsagar Lake, Tapola is a hidden gem that 
-mirrors the beauty of Kashmir. Surrounded by dense forests and wrapped in 
-tranquility, it's the perfect escape from city chaos.</p>
-                        <a href="https://wa.me/919653217634?text=Hi!%20I'm%20interested%20in%20Lonavla"
-                            class="btn btn-outline" style="width: 100%;">Get Notified</a>
-                    </div>
-                </div>
-
-                <!-- Upcoming Trek 5 -->
-                <div class="testimonial-card fade-in"
-                    style="padding: 0; overflow: hidden; max-width: 350px; border: 1px solid var(--color-gray-200); box-shadow: var(--shadow-md);">
-                    <div style="height: 200px; background: url('images/Alibaug.png') center/cover; position: relative;">
-                        <span class="badge badge-urgent" style="position: absolute; top: 15px; left: 15px;">Coming
-                            Soon</span>
-                    </div>
-                    <div style="padding: var(--space-lg);">
-                        <h3 style="margin-bottom: var(--space-sm);">Alibaug Beach Camping</h3>
-                        <p style="color: var(--color-gray-500); font-size: 0.9rem; margin-bottom: var(--space-md);">
-                            Swap the mountains for the sea. Beachfront camping with night walks & bonfire.</p>
-                        <a href="https://wa.me/919653217634?text=Hi!%20I'm%20interested%20in%20Alibaug"
-                            class="btn btn-outline" style="width: 100%;">Get Notified</a>
+                    <div class="trek-content">
+                        <h3>Mahabaleshwar</h3>
+                        <p>Maharashtra's most loved hill station with sprawling strawberry farms, ancient temples, and breathtaking viewpoints.</p>
+                        <a href="https://wa.me/919653217634?text=Hi!%20I'm%20interested%20in%20Mahabaleshwar%20Trip" class="btn btn-outline">Get Notified</a>
                     </div>
                 </div>
             </div>
@@ -539,101 +382,97 @@ tranquility, it's the perfect escape from city chaos.</p>
     </section>
 
     <!-- ========================================
-       REFER & EARN SECTION
-  ======================================== -->
-    <section class="section" id="referral"
-        style="background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%); color: white; padding: 50px 0 40px; position: relative; overflow: hidden;">
-        <div
-            style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(52, 211, 153, 0.1); border-radius: 50%;">
-        </div>
-        <div class="container" style="position: relative; z-index: 1;">
-
+       REFER & EARN SECTION - FIXED WITH GOLD
+    ======================================== -->
+    <section class="section" id="referral">
+        <div class="decorative-circle top-right"></div>
+        <div class="decorative-circle bottom-left"></div>
+        
+        <div class="container">
             <!-- Header -->
-            <div style="text-align: center; margin-bottom: var(--space-lg);">
-                <h2 class="section-title fade-in" style="color: white; margin-bottom: 4px; font-size: 1.8rem;">Refer &
-                    Earn</h2>
-                <p class="fade-in" style="color: #94a3b8; font-size: 0.95rem;">Travel More. Earn More. Repeat.</p>
+            <div class="text-center" style="margin-bottom: 40px;">
+                <h2 class="section-title"><span>Refer</span> & Earn</h2>
+                <p style="color: #94a3b8;">Travel More. Earn More. Repeat.</p>
             </div>
 
-            <!-- Combined: Steps + Reward Details -->
-            <div class="referral-grid fade-in"
-                style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); max-width: 900px; margin: 0 auto var(--space-lg);">
-
+            <!-- Referral Grid -->
+            <div class="referral-grid">
                 <!-- Left: How It Works -->
-                <div
-                    style="background: rgba(255,255,255,0.05); border-radius: var(--radius-xl); padding: var(--space-lg); border: 1px solid rgba(255,255,255,0.08);">
-                    <h3 style="color: white; font-size: 1rem; margin-bottom: var(--space-md); text-align: center;">How
-                        It Works</h3>
-                    <div style="display: flex; flex-direction: column; gap: var(--space-md);">
-                        <div style="display: flex; align-items: center; gap: var(--space-md);">
-                            <span
-                                style="flex-shrink: 0; width: 32px; height: 32px; background: rgba(52,211,153,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #34d399; font-size: 0.9rem;">1</span>
-                            <div><strong style="color: #34d399; font-size: 0.9rem;">Share</strong><br><span
-                                    style="color: #94a3b8; font-size: 0.8rem;">Tell friends about our treks</span></div>
+                <div class="referral-card">
+                    <h3>✨ How It Works</h3>
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <strong>Share</strong>
+                                <span>Tell friends about our treks</span>
+                            </div>
                         </div>
-                        <div style="display: flex; align-items: center; gap: var(--space-md);">
-                            <span
-                                style="flex-shrink: 0; width: 32px; height: 32px; background: rgba(52,211,153,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #34d399; font-size: 0.9rem;">2</span>
-                            <div><strong style="color: #34d399; font-size: 0.9rem;">They Book</strong><br><span
-                                    style="color: #94a3b8; font-size: 0.8rem;">Min &#8377;2,499 & mention your
-                                    name</span></div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <strong>They Book</strong>
+                                <span>Min ₹2,499 & mention your name</span>
+                            </div>
                         </div>
-                        <div style="display: flex; align-items: center; gap: var(--space-md);">
-                            <span
-                                style="flex-shrink: 0; width: 32px; height: 32px; background: rgba(52,211,153,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #34d399; font-size: 0.9rem;">3</span>
-                            <div><strong style="color: #34d399; font-size: 0.9rem;">You Earn
-                                    &#8377;250!</strong><br><span style="color: #94a3b8; font-size: 0.8rem;">Cashback
-                                    credit on your next trip</span></div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <strong>You Earn ₹250!</strong>
+                                <span>Cashback credit on your next trip</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right: Reward Stats -->
-                <div
-                    style="background: rgba(255,255,255,0.05); border-radius: var(--radius-xl); padding: var(--space-lg); border: 1px solid rgba(255,255,255,0.08);">
-                    <h3 style="color: white; font-size: 1rem; margin-bottom: var(--space-md); text-align: center;">
-                        Reward Details</h3>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm);">
-                        <div
-                            style="padding: var(--space-sm) var(--space-md); background: rgba(52, 211, 153, 0.1); border-radius: var(--radius-md); text-align: center;">
-                            <p style="color: #94a3b8; font-size: 0.75rem; margin-bottom: 2px;">Min. Booking</p>
-                            <p style="color: white; font-weight: 700; font-size: 1.1rem;">&#8377;2,499</p>
+                <!-- Right: Reward Details -->
+                <div class="referral-card">
+                    <h3>💰 Reward Details</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-label">Min. Booking</div>
+                            <div class="stat-value">₹2,499</div>
                         </div>
-                        <div
-                            style="padding: var(--space-sm) var(--space-md); background: rgba(52, 211, 153, 0.1); border-radius: var(--radius-md); text-align: center;">
-                            <p style="color: #94a3b8; font-size: 0.75rem; margin-bottom: 2px;">You Earn</p>
-                            <p style="color: #34d399; font-weight: 700; font-size: 1.1rem;">&#8377;250</p>
+                        <div class="stat-card">
+                            <div class="stat-label">You Earn</div>
+                            <div class="stat-value accent">₹250</div>
                         </div>
-                        <div
-                            style="padding: var(--space-sm) var(--space-md); background: rgba(52, 211, 153, 0.1); border-radius: var(--radius-md); text-align: center;">
-                            <p style="color: #94a3b8; font-size: 0.75rem; margin-bottom: 2px;">Referral Limit</p>
-                            <p style="color: white; font-weight: 700; font-size: 1.1rem;">Unlimited</p>
+                        <div class="stat-card">
+                            <div class="stat-label">Referral Limit</div>
+                            <div class="stat-value">Unlimited</div>
                         </div>
-                        <div
-                            style="padding: var(--space-sm) var(--space-md); background: rgba(52, 211, 153, 0.1); border-radius: var(--radius-md); text-align: center;">
-                            <p style="color: #94a3b8; font-size: 0.75rem; margin-bottom: 2px;">Validity</p>
-                            <p style="color: white; font-weight: 700; font-size: 1.1rem;">6 Months</p>
+                        <div class="stat-card">
+                            <div class="stat-label">Validity</div>
+                            <div class="stat-value">6 Months</div>
                         </div>
                     </div>
-                    <!-- CTA inside right panel -->
-                    <div style="margin-top: var(--space-md); text-align: center;">
-                        <a href="https://wa.me/919653217634?text=Hi!%20I%20want%20to%20refer%20a%20friend%20to%20Moksha%20Trails.%20Please%20share%20the%20referral%20details!"
-                            class="btn btn-primary"
-                            style="font-size: 0.95rem; padding: 12px 28px; background: linear-gradient(135deg, #059669, #10b981); width: 100%;">Refer
-                            a Friend via WhatsApp</a>
-                    </div>
+                    
+                    <a href="https://wa.me/919653217634?text=Hi!%20I%20want%20to%20refer%20a%20friend%20to%20MokshaTrails.%20Please%20share%20the%20referral%20details!"
+                        class="btn btn-accent" style="width: 100%;">
+                        📱 Refer a Friend via WhatsApp
+                    </a>
                 </div>
             </div>
 
-            <!-- T&C -->
-            <details class="fade-in" style="max-width: 900px; margin: 0 auto;">
-                <summary style="color: #64748b; cursor: pointer; font-size: 0.8rem; text-align: center;">Terms &
-                    Conditions</summary>
-                <div
-                    style="color: #64748b; font-size: 0.75rem; line-height: 1.7; padding: var(--space-sm) var(--space-md); background: rgba(0,0,0,0.2); border-radius: var(--radius-md); margin-top: var(--space-xs); columns: 2; column-gap: var(--space-xl);">
-                    <ul style="list-style: disc; padding-left: 16px;">
-                        <li>Referral reward applicable only on min &#8377;2,499 booking with full payment.</li>
-                        <li>&#8377;250 credit added within 7 working days after trip confirmation.</li>
+            <!-- Contact Numbers -->
+            <div class="contact-numbers">
+                <a href="tel:+919653217634" class="contact-link">
+                    <span>📞</span> +91 96532 17634
+                </a>
+                <a href="tel:+919867840908" class="contact-link">
+                    <span>📞</span> +91 98678 40908
+                </a>
+            </div>
+
+            <!-- Terms & Conditions -->
+            <details class="terms-details">
+                <summary class="terms-summary">
+                    <span>📋 Terms & Conditions</span>
+                </summary>
+                <div class="terms-content">
+                    <ul>
+                        <li>Referral reward applicable only on min ₹2,499 booking with full payment.</li>
+                        <li>₹250 credit added within 7 working days after trip confirmation.</li>
                         <li>Cashback valid for 6 months, redeemable on future MokshaTrails bookings only.</li>
                         <li>Cannot be encashed, transferred, or exchanged for cash.</li>
                         <li>Self-referrals prohibited. Cancelled bookings void the reward.</li>
@@ -646,12 +485,12 @@ tranquility, it's the perfect escape from city chaos.</p>
 
     <!-- ========================================
        TESTIMONIALS
-  ======================================== -->
+    ======================================== -->
     <section class="section testimonials" id="testimonials">
         <div class="container">
             <h2 class="section-title fade-in">What Trekkers Say</h2>
 
-            <div class="testimonials-slider" id="testimonialSlider">
+            <div class="testimonials-grid">
                 <div class="testimonial-card fade-in">
                     <p class="testimonial-content">
                         "An absolutely breathtaking experience! The Sandhan Valley views were unreal.
@@ -702,7 +541,7 @@ tranquility, it's the perfect escape from city chaos.</p>
 
     <!-- ========================================
        FAQ SECTION
-  ======================================== -->
+    ======================================== -->
     <section class="section faq" id="faq">
         <div class="container">
             <h2 class="section-title fade-in">Frequently Asked Questions</h2>
@@ -716,7 +555,7 @@ tranquility, it's the perfect escape from city chaos.</p>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
                             <p><strong>Essential items to carry:</strong></p>
-                            <ul style="list-style: disc; padding-left: 20px; margin-top: 10px;">
+                            <ul>
                                 <li>Comfortable trekking shoes (mandatory)</li>
                                 <li>2 liters of water</li>
                                 <li>Personal snacks (energy bars, dry fruits)</li>
@@ -739,15 +578,8 @@ tranquility, it's the perfect escape from city chaos.</p>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            <p>Most of our adventures are <strong>moderate-level treks</strong>. You should be able to:
-                            </p>
-                            <ul style="list-style: disc; padding-left: 20px; margin-top: 10px;">
-                                <li>Walk 8-10 km comfortably</li>
-                                <li>Climb stairs without getting too breathless</li>
-                                <li>Have no major knee or back issues</li>
-                            </ul>
-                            <p style="margin-top: 10px;">If you've done basic hikes or treks before, you'll be fine!
-                                First-timers with decent fitness can also complete the trek comfortably.</p>
+                            <p>Most of our adventures are <strong>moderate-level treks</strong>. You should be able to walk 8-10 km comfortably and climb stairs without getting too breathless.</p>
+                            <p>If you've done basic hikes or treks before, you'll be fine! First-timers with decent fitness can also complete the trek comfortably.</p>
                         </div>
                     </div>
                 </div>
@@ -759,51 +591,24 @@ tranquility, it's the perfect escape from city chaos.</p>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            <p>Yes! Your safety is our top priority. Here's what we ensure:</p>
-                            <ul style="list-style: disc; padding-left: 20px; margin-top: 10px;">
-                                <li>Experienced local guides who know the terrain</li>
-                                <li>Basic first-aid kit available</li>
-                                <li>Small group size (usually 15-20 max) for better supervision</li>
-                                <li>We check weather conditions before every batch</li>
-                                <li>Trek is cancelled/postponed if conditions are unsafe</li>
-                            </ul>
-                            <p style="margin-top: 10px;">Just follow the guide's instructions and you'll have a safe,
-                                memorable adventure!</p>
+                            <p>Yes! Your safety is our top priority. We provide experienced local guides, first-aid kit, small group sizes, and check weather conditions before every batch.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="faq-item fade-in">
                     <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>What if I need to cancel my booking?</span>
+                        <span>What is your cancellation policy?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            <p><strong>Cancellation Policy:</strong></p>
-                            <ul style="list-style: disc; padding-left: 20px; margin-top: 10px;">
+                            <ul>
                                 <li>7+ days before: 80% refund</li>
                                 <li>3-7 days before: 50% refund</li>
                                 <li>Less than 3 days: No refund</li>
                                 <li>You can transfer your booking to someone else at no extra cost</li>
                             </ul>
-                            <p style="margin-top: 10px;">If we cancel due to weather/forest closure, you get a full
-                                refund
-                                or can reschedule to another date.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item fade-in">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>Are there washroom facilities?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            <p>Facilities depend on the location. Most base villages have basic washroom facilities.
-                                During the trek, there are no dedicated facilities, but the guide will
-                                arrange bio-breaks at appropriate spots with natural cover.</p>
                         </div>
                     </div>
                 </div>
@@ -813,74 +618,34 @@ tranquility, it's the perfect escape from city chaos.</p>
 
     <!-- ========================================
        FOOTER
-  ======================================== -->
+    ======================================== -->
     <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <a href="#" class="footer-logo">
-                    <img src="images/icon-bg.png" alt="MokshaTrails Logo"
-                        style="height: 50px; width: 50px; object-fit: contain;">
-                    <span style="display: inline-block; margin-left: var(--space-sm);">MokshaTrails</span>
+                    <img src="images/icon-bg.png" alt="MokshaTrails Logo">
+                    <span>MokshaTrails</span>
                 </a>
 
                 <div class="footer-contact">
-                    <div
-                        style="font-size: 0.9rem; color: var(--color-gray-500); margin-bottom: var(--space-md); text-align: center; max-width: 400px; margin-left: auto; margin-right: auto;">
-                        <div style="display: flex; align-items: flex-start; gap: 8px; justify-content: center;">
-                            <span style="flex-shrink: 0; line-height: 1.5;">📍</span>
-                            <span style="text-align: left;">Shop no. 6, R.C. Barrack no. 25, Opp Anandpur Darbar, Gandhi
-                                Market, Chembur Camp, Chembur Mumbai 400074</span>
-                        </div>
+                    <div class="address">
+                        <span>📍</span>
+                        <span>Shop no. 6, R.C. Barrack no. 25, Opp Anandpur Darbar, Gandhi Market, Chembur Camp, Chembur Mumbai 400074</span>
                     </div>
                     <div style="display: flex; gap: var(--space-lg); justify-content: center; flex-wrap: wrap;">
                         <a href="tel:+919653217634" class="footer-link">
-                            <span>📞</span>
-                            <span>+91 96532 17634</span>
+                            <span>📞</span> +91 96532 17634
                         </a>
                         <a href="mailto:mokshatrails.co@gmail.com" class="footer-link">
-                            <span>✉️</span>
-                            <span>mokshatrails.co@gmail.com</span>
+                            <span>✉️</span> mokshatrails.co@gmail.com
                         </a>
                     </div>
                 </div>
 
-                <div class="footer-social-section"
-                    style="display: flex; flex-direction: column; align-items: center; gap: var(--space-sm);">
-                    <div class="footer-social">
-                        <a href="https://wa.me/919653217634" class="social-icon" aria-label="WhatsApp">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="https://instagram.com/MokshaTrails" class="social-icon" aria-label="Instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-                            </svg>
-                        </a>
-                        <a href="https://t.me/+919653217634" class="social-icon" aria-label="Telegram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                            </svg>
-                        </a>
-                        <a href="https://x.com/MokshaTrails" class="social-icon" aria-label="X (Twitter)">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
-                            </svg>
-                        </a>
-                    </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/919653217634" class="social-icon" aria-label="WhatsApp">📱</a>
+                    <a href="https://instagram.com/MokshaTrails" class="social-icon" aria-label="Instagram">📷</a>
+                    <a href="https://t.me/+919653217634" class="social-icon" aria-label="Telegram">📨</a>
                 </div>
             </div>
 
@@ -893,13 +658,11 @@ tranquility, it's the perfect escape from city chaos.</p>
 
     <!-- ========================================
        STICKY MOBILE CTA
-  ======================================== -->
+    ======================================== -->
     <div class="sticky-cta">
         <a href="https://wa.me/919653217634?text=Hi!%20I%20want%20to%20book%20the%20Sandhan%20Valley%20Trek"
-            class="btn btn-primary">
-            📱 Book Now
-        </a>
-<a href="tel:+919653217634" class="btn btn-outline">📞 Call Us: +91 96532 17634|+91 9867840908</a>
+            class="btn btn-primary">📱 Book Now</a>
+        <a href="tel:+919653217634" class="btn btn-outline">📞 Call</a>
     </div>
 
     <!-- Scripts -->
